@@ -17,6 +17,10 @@ public class Main {
 			for(int i=1;stdin.hasNext();i++) {
 				str.add(stdin.next());
 				if(str.get(i).length()>2) {
+					if(str.get(i).equals("end")) {
+						stdin.close();
+						break;
+					}
 					if(str.get(i-1).charAt(str.get(i-1).length()-1) == str.get(i).charAt(0)) {
 						continue;
 					}
